@@ -62,6 +62,16 @@
   .project p { margin: 0 0 12px; }
   .project a { font-weight: 600; font-size: 15px; }
 
+  .resume { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 8px 28px; }
+  .row { display: grid; grid-template-columns: 170px 1fr; gap: 8px 24px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .row:last-child { border-bottom: 0; }
+  .row .when { color: var(--muted); font-size: 14px; }
+  .row h3 { margin: 0; font-size: 1.05rem; color: var(--navy); }
+  .row p { margin: 2px 0 0; color: var(--muted); font-size: 15.5px; }
+  .dl { margin-top: 22px; }
+  .dl .btn { background: #111111; color: #fff; }
+  @media (max-width: 760px) { .row { grid-template-columns: 1fr; } }
+
   footer { margin-top: 72px; background: var(--navy); color: #bdbdbd; padding: 36px 0; font-size: 15px; }
   footer a { color: #fff; }
   footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
@@ -80,6 +90,7 @@
     <nav aria-label="Sections">
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -169,6 +180,35 @@
           <a href="https://www.linkedin.com/in/alexander-skiba/">Connect on LinkedIn</a>
         </article>
       </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <p class="lead">A quick snapshot of my background. The full resume is available as a PDF.</p>
+      <div class="resume">
+        <div class="row">
+          <div class="when">Expected May 2029</div>
+          <div><h3>Rutgers Business School</h3><p>B.S. in Public Accounting. Coursework: Financial Accounting, Statistics I, Finite Mathematics, Microeconomics.</p></div>
+        </div>
+        <div class="row">
+          <div class="when">Summer 2022 to Summer 2025</div>
+          <div><h3>XTech Protective Equipment, LLC</h3><p>Paid Intern and Manufacturer. Helped produce football shoulder pads for NFL, college, and high school teams and learned shipping pricing and protocol.</p></div>
+        </div>
+        <div class="row">
+          <div class="when">Sept. to Dec. 2025</div>
+          <div><h3>Business Plan Project, Financials</h3><p>Built cash flow and financial analysis for a six-person team's original company concept.</p></div>
+        </div>
+        <div class="row">
+          <div class="when">Summer 2019 to present</div>
+          <div><h3>Personal Investment Portfolio</h3><p>Portfolio Manager making buy and sell decisions and monitoring valuations, trends, and risk.</p></div>
+        </div>
+        <div class="row">
+          <div class="when">Certification</div>
+          <div><h3>Introduction to Personal Financial Planning</h3><p>EdX certificate from the Indiana University Kelley School of Business.</p></div>
+        </div>
+      </div>
+      <div class="dl"><a class="btn" href="Alexander_Skiba_Resume.pdf" download>Download full resume (PDF)</a></div>
     </section>
   </div>
 </main>
